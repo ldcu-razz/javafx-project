@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vBoxWrapper" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.LoginController">
+   <children>
+      <BorderPane prefHeight="554.0" prefWidth="944.0">
+         <center>
+            <VBox maxHeight="-Infinity" maxWidth="320.0" styleClass="login-panel" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="543.0" text="Welcome">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin></Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="16.0">
+                     <children>
+                        <VBox spacing="8.0">
+                           <children>
+                              <Label styleClass="form-label" text="Username" />
+                              <TextField styleClass="text-field" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="8.0">
+                           <children>
+                              <Label styleClass="form-label" text="Password" />
+                              <PasswordField styleClass="text-field" />
+                           </children>
+                        </VBox>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="primary-button" text="Login" VBox.vgrow="ALWAYS" />
+                     </children></VBox>
+               </children>
+            </VBox>
+         </center></BorderPane>
+   </children>
+</VBox>
