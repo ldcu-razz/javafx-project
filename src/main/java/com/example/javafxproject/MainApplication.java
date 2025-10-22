@@ -8,10 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Main extends Application {
+public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
         Parent root = fxmlLoader.load();
 
         LoginController controller = fxmlLoader.getController();
@@ -21,7 +21,7 @@ public class Main extends Application {
         String styleCss = this.getClass().getResource("application.css").toExternalForm();
         scene.getStylesheets().add(styleCss);
 
-        stage.setTitle("Hello!");
+        stage.setTitle("Java Sample Project");
         stage.setScene(scene);
         stage.show();
     }

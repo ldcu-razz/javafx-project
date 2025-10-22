@@ -11,7 +11,7 @@
          <center>
             <VBox maxHeight="-Infinity" maxWidth="320.0" styleClass="login-panel" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="543.0" text="Welcome">
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="543.0" text="Welcome! Sign in to start">
                      <font>
                         <Font name="System Bold Italic" size="24.0" />
                      </font>
@@ -23,17 +23,18 @@
                         <VBox spacing="8.0">
                            <children>
                               <Label styleClass="form-label" text="Username" />
-                              <TextField styleClass="text-field" />
+                              <TextField fx:id="usernameTextField" styleClass="text-field" />
                            </children>
                         </VBox>
                         <VBox spacing="8.0">
                            <children>
                               <Label styleClass="form-label" text="Password" />
-                              <PasswordField styleClass="text-field" />
+                              <PasswordField fx:id="passwordTextField" styleClass="text-field" />
                            </children>
                         </VBox>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="primary-button" text="Login" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="loginBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLoginButtonAction" styleClass="primary-button" text="Login" VBox.vgrow="ALWAYS" />
                      </children></VBox>
+                  <Label fx:id="createAccountAnchor" alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" onMouseClicked="#handleCreateAccountClickAction" styleClass="anchor-text" text="Create account" />
                </children>
             </VBox>
          </center></BorderPane>

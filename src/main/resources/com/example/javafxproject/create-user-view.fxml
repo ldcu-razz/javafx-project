@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vBoxWrapper" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.CreateUserController">
+    <children>
+        <BorderPane prefHeight="659.0" prefWidth="944.0">
+            <center>
+                <VBox maxHeight="-Infinity" maxWidth="425.0" prefHeight="529.0" prefWidth="425.0" styleClass="login-panel" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="543.0" text="Create an account">
+                            <font>
+                                <Font name="System Bold Italic" size="24.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="32.0" />
+                            </VBox.margin></Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="16.0">
+                            <children>
+                                <VBox spacing="8.0">
+                                    <children>
+                                        <Label styleClass="form-label" text="First name" />
+                                        <TextField fx:id="firstnameTextField" styleClass="text-field" />
+                                    </children>
+                                </VBox>
+                                <VBox spacing="8.0">
+                                    <children>
+                                        <Label styleClass="form-label" text="Last name" />
+                              <TextField fx:id="lastnameTextField" styleClass="text-field" />
+                                    </children>
+                                </VBox>
+                        <VBox layoutX="10.0" layoutY="84.0" spacing="8.0">
+                           <children>
+                              <Label styleClass="form-label" text="Username" />
+                              <TextField fx:id="usernameTextField" styleClass="text-field" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="158.0" spacing="8.0">
+                           <children>
+                              <Label styleClass="form-label" text="Password" />
+                              <PasswordField fx:id="passwordTextField" styleClass="text-field" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="232.0" spacing="8.0">
+                           <children>
+                              <Label styleClass="form-label" text="Re-enter Password" />
+                              <PasswordField fx:id="reEnterPasswordTextField" styleClass="text-field" />
+                           </children>
+                        </VBox>
+                            </children></VBox>
+                  <HBox spacing="16.0">
+                     <children>
+                                <Button fx:id="backBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButtonAction" styleClass="primary-button-outlined" text="Back" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="createAccountBtn1" layoutX="10.0" layoutY="26.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleCreateButtonAction" styleClass="primary-button" text="Create account" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </HBox>
+                    </children>
+                </VBox>
+            </center></BorderPane>
+    </children>
+</VBox>
