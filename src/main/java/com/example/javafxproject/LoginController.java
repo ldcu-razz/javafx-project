@@ -1,6 +1,5 @@
 package com.example.javafxproject;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -48,10 +47,7 @@ public class LoginController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("create-user-view.fxml"));
         Parent root = loader.load();
 
-        // Get the current stage
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        // Set new scene
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
