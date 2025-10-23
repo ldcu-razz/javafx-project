@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.OtpController">
+   <children>
+      <BorderPane prefHeight="520.0" prefWidth="800.0">
+         <center>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="302.0" prefWidth="370.0" spacing="16.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="otpLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="On -Time Password">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="otpField" promptText="Enter 6 digit otp" styleClass="text-field" />
+                  <Button fx:id="submitButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSubmitButtonAction" styleClass="primary-button-outlined" text="Submit" />
+               </children>
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
