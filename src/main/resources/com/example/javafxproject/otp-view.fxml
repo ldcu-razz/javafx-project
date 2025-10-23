@@ -5,24 +5,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
 <VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.OtpController">
    <children>
-      <BorderPane prefHeight="520.0" prefWidth="800.0">
+      <BorderPane prefHeight="580.0" prefWidth="820.0">
          <center>
-            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="302.0" prefWidth="370.0" spacing="16.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Label fx:id="otpLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="On -Time Password">
-                     <font>
-                        <Font name="System Bold" size="22.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="otpField" promptText="Enter 6 digit otp" styleClass="text-field" />
-                  <Button fx:id="submitButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSubmitButtonAction" styleClass="primary-button-outlined" text="Submit" />
-               </children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="420.0" spacing="16.0" BorderPane.alignment="CENTER">
                <padding>
                   <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
                </padding>
+               <children>
+                  <Label fx:id="enterOtpLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Enter your OTP!">
+                     <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="otpField" promptText="Enter OTP" styleClass="text-field">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></TextField>
+                  <Button fx:id="submitButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSubmitButtonAction" styleClass="primary-button" text="Submit" />
+               </children>
             </VBox>
          </center>
       </BorderPane>

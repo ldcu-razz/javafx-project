@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 public class OtpController {
 
     @FXML
-    Label otpLabel;
+    Label enterOtpLabel;
 
     @FXML
     TextField otpField;
@@ -19,11 +19,8 @@ public class OtpController {
     @FXML
     public void handleSubmitButtonAction() {
         String otpValue = otpField.getText();
-        if (otpValue.isEmpty()) {
-            System.out.println("OTP is empty");
-            return;
-        }
 
-        System.out.println("OTP value is " + otpValue);
+        System.out.println("OPT VALUE: " + otpValue);
     }
+
 }
