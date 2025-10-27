@@ -86,3 +86,35 @@
     -fx-background-color: #468EE0;
     -fx-text-fill: white;
 }
+
+.main-sidebar {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #DEDEDE;
+    -fx-border-width: 1;
+    -fx-border-insets: 0 1 0 0;
+    -fx-border-radius: 0 10 10 0;
+}
+
+.sidebar-items-container {
+    -fx-end-margin: -20;
+    -fx-start-margin: -20;
+}
+
+.sidebar-item {
+    -fx-padding: 8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.sidebar-item-label {
+    -fx-font-size: 16;
+}
+
+.sidebar-item:hover {
+    -fx-background-color: #468EE0;
+}
+
+.sidebar-item:hover .sidebar-item-label {
+    -fx-text-fill: #FFFFFF;
+}
