@@ -26,6 +26,8 @@ public class CreateUserController {
     private TextField reEnterPasswordTextField;
 
     public void initialize() {
+
+
         // TODO
     }
 
